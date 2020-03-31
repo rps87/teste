@@ -16,7 +16,7 @@
                 $this->controlador->index();
                 return;		
             }
-            /*if ( ! file_exists( ABSPATH . '/controllers/' . $this->controlador . '.php' ) ) {
+            if ( ! file_exists( ABSPATH . '/controllers/' . $this->controlador . '.php' ) ) {
                 require_once ABSPATH . $this->not_found;
                 return;
             }
@@ -36,7 +36,7 @@
                 $this->controlador->index( $this->parametros );		
                 return;
             }
-            require_once ABSPATH . $this->not_found;*/
+            require_once ABSPATH . $this->not_found;
             return;
         }
 
