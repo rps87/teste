@@ -1,0 +1,26 @@
+{
+  "window.zoomLevel": 0,
+  "diffEditor.renderSideBySide": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.maxColumn": 200,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "php.validate.executablePath": "/usr/bin/php",
+  "phpunit.php": "/usr/bin/php",
+  "phpunit.phpunit": "/etc/php/7.2/apache2/phpunit-8.1.6.phar",
+  "prettier.printWidth": 140,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "es5",
+  "phpunit.trace.server": "verbose",
+  "phpunit.logpanel": true,
+  "phpunit.files": "{test,tests,testes}/**/*Test.php"
+  /*"workbench.colorCustomizations": {
+    "activityBar.border": "#55790273",
+    "contrastActiveBorder": "#55790273",
+    "contrastBorder": "#55790273",
+    "activityBar.background": "#55790273",
+    "window.activeBorder": "#55790273",
+    "editor.background": "#3c790213"
+  }*/
+}
