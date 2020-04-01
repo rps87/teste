@@ -41,11 +41,14 @@
         }
 
         public function get_url_data () {
+            //$url = str_replace("/teste/", "", $_SERVER["REQUEST_URI"]);
+            //if ( ! $url === "" ) {
             if ( isset( $_GET['path'] ) ) {
                 $path = $_GET['path'];
                 $path = rtrim($path, '/');
                 $path = filter_var($path, FILTER_SANITIZE_URL);
                 $path = explode('/', $path);
+                //$path = $url;
                 $this->controlador  = chk_array( $path, 0 );
                 $this->controlador .= '-controller';
                 $this->acao         = chk_array( $path, 1 );
