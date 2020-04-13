@@ -43,19 +43,19 @@
         public function get_url_data () {
             //$url = str_replace("/teste/", "", $_SERVER["REQUEST_URI"]);
             //if ( ! $url === "" ) {
-            if ( isset( $_GET['path'] ) ) {
-                $path = $_GET['path'];
-                $path = rtrim($path, '/');
-                $path = filter_var($path, FILTER_SANITIZE_URL);
-                $path = explode('/', $path);
+            if ( isset( $_GET['caminho'] ) ) {
+                $caminho = $_GET['caminho'];
+                $caminho = rtrim($caminho, '/');
+                $caminho = filter_var($caminho, FILTER_SANITIZE_URL);
+                $caminho = explode('/', $caminho);
                 //$path = $url;
-                $this->controlador  = chk_array( $path, 0 );
+                $this->controlador  = chk_array( $caminho, 0 );
                 $this->controlador .= '-controller';
-                $this->acao         = chk_array( $path, 1 );
-                if ( chk_array( $path, 2 ) ) {
-                    unset( $path[0] );
-                    unset( $path[1] );
-                    $this->parametros = array_values( $path );
+                $this->acao         = chk_array( $caminho, 1 );
+                if ( chk_array( $caminho, 2 ) ) {
+                    unset( $caminho[0] );
+                    unset( $caminho[1] );
+                    $this->parametros = array_values( $caminho );
                 }
                 // DEBUG
                 //

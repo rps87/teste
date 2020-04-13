@@ -6,7 +6,7 @@
         return null;
     }
 
-    function my_autoload($class_name) {
+    function meu_autoload($class_name) {
         $file = ABSPATH . '/classes/' . $class_name . '.php';
         if ( ! file_exists( $file ) ) {
             require_once ABSPATH . '/includes/404.php';
@@ -14,4 +14,4 @@
         }
         require_once $file;
     }
-    spl_autoload_register("my_autoload");
+    spl_autoload_register("meu_autoload");
